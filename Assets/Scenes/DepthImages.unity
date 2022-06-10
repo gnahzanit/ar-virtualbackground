@@ -935,10 +935,10 @@ MonoBehaviour:
   m_TrackingStateAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: df758e2c-eb30-444f-b2e7-77c9f707fe4a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -967,10 +967,10 @@ MonoBehaviour:
   m_SelectActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: ec88bcb3-be2c-420f-9779-fd89221a1e9a
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -991,10 +991,10 @@ MonoBehaviour:
   m_ActivateActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 3e6c8bd5-d065-4259-b0ba-a55761688353
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1047,10 +1047,10 @@ MonoBehaviour:
   m_UIPressActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: caa14ea7-37e6-43d8-a09c-1adebc9fa24e
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3157,10 +3157,10 @@ MonoBehaviour:
   m_TrackingStateAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Tracking State
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: ba0dcbb7-841a-4d11-ac22-6834f0b7c3b8
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3189,10 +3189,10 @@ MonoBehaviour:
   m_SelectActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Select Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 79442645-5760-4166-8634-ed1a93d59229
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3213,10 +3213,10 @@ MonoBehaviour:
   m_ActivateActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Activate Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 603c4f15-b13e-43b7-87ee-79ea85b8b354
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3253,10 +3253,10 @@ MonoBehaviour:
   m_UIPressActionValue:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Press Action Value
       m_Type: 0
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 5dd7b525-34d3-4ddb-803f-8060e86812ac
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3527,7 +3527,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474869891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3538,7 +3538,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 480, y: 480}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1474869893
 MonoBehaviour:
@@ -4173,6 +4173,7 @@ GameObject:
   - component: {fileID: 2124880354}
   - component: {fileID: 2124880360}
   - component: {fileID: 2124880359}
+  - component: {fileID: 2124880361}
   - component: {fileID: 2124880358}
   - component: {fileID: 2124880357}
   - component: {fileID: 2124880356}
@@ -4228,8 +4229,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UseCustomMaterial: 0
-  m_CustomMaterial: {fileID: 0}
+  m_UseCustomMaterial: 1
+  m_CustomMaterial: {fileID: 2100000, guid: 51aa55f3db617474e984b24ad0246c02, type: 2}
 --- !u!114 &2124880357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4435,3 +4436,16 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &2124880361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124880353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5b11315abd94c6f8701f4d2e0cd4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shader: {fileID: 4800000, guid: 0a2f050370b774b0f997eeb4bd824ebd, type: 3}

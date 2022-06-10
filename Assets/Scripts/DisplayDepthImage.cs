@@ -398,7 +398,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             switch (m_DisplayMode)
             {
                 default:
-                    material = m_StencilMaterial;
+                    material =  m_StencilMaterial;
                     maxDistance = m_MaxHumanDistance;
                     break;
             }
