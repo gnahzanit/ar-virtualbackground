@@ -69,47 +69,14 @@ namespace UnityEngine.XR.ARFoundation.Samples
         /// </summary.
         Matrix4x4 m_DisplayRotationMatrix = Matrix4x4.identity;
 
-#if UNITY_ANDROID
-        /// <summary>
-        /// A matrix to flip the Y coordinate for the Android platform.
-        /// </summary>
-        Matrix4x4 k_AndroidFlipYMatrix = Matrix4x4.identity;
-#endif // UNITY_ANDROID
-
-        /// <summary>
-        /// Get or set the <c>AROcclusionManager</c>.
-        /// </summary>
-        public AROcclusionManager occlusionManager
-        {
-            get => m_OcclusionManager;
-            set => m_OcclusionManager = value;
-        }
 
         [SerializeField]
         [Tooltip("The AROcclusionManager which will produce depth textures.")]
         AROcclusionManager m_OcclusionManager;
 
-        /// <summary>
-        /// Get or set the <c>ARCameraManager</c>.
-        /// </summary>
-        public ARCameraManager cameraManager
-        {
-            get => m_CameraManager;
-            set => m_CameraManager = value;
-        }
-
         [SerializeField]
         [Tooltip("The ARCameraManager which will produce camera frame events.")]
         ARCameraManager m_CameraManager;
-
-        /// <summary>
-        /// The UI RawImage used to display the image on screen.
-        /// </summary>
-        public RawImage rawImage
-        {
-            get => m_RawImage;
-            set => m_RawImage = value;
-        }
 
         [SerializeField]
         RawImage m_RawImage;
@@ -173,14 +140,6 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
         [SerializeField]
         float m_MaxHumanDistance = 3.0f;
-
-        void Awake()
-        {
-#if UNITY_ANDROID
-            k_AndroidFlipYMatrix[1,1] = -1.0f;
-            k_AndroidFlipYMatrix[2,1] = 1.0f;
-#endif // UNITY_ANDROID
-        }
 
         void OnEnable()
         {
