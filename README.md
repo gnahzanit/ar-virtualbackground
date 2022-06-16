@@ -1,5 +1,5 @@
 # AR Foundation Implementing Virtual Background Research 
-A general research into AR Foundation 5.0 on verified Unity 2021.3.4f1 LTS as of 2022 June, which relies on three Unity packages:
+A general research into implementing Virtual Background using AR Foundation 5.0 on verified Unity 2021.3.4f1 LTS as of 2022 June, which relies on three Unity packages:
 * Google ARCore XR Plug-in ([documentation](https://docs.unity3d.com/Packages/com.unity.xr.arcore@5.0/manual/index.html))
 * Apple ARKit XR Plug-in ([documentation](https://docs.unity3d.com/Packages/com.unity.xr.arkit@5.0/manual/index.html))
 * ARFoundation ([documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html))
