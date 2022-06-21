@@ -1872,7 +1872,6 @@ GameObject:
   - component: {fileID: 2124880354}
   - component: {fileID: 2124880360}
   - component: {fileID: 2124880359}
-  - component: {fileID: 2124880361}
   - component: {fileID: 2124880358}
   - component: {fileID: 2124880357}
   - component: {fileID: 2124880356}
@@ -1929,7 +1928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UseCustomMaterial: 1
-  m_CustomMaterial: {fileID: 2100000, guid: 51aa55f3db617474e984b24ad0246c02, type: 2}
+  m_CustomMaterial: {fileID: 2100000, guid: de66e3f5fe5f94d46aad507d14c42b5c, type: 2}
 --- !u!114 &2124880357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2135,16 +2134,3 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &2124880361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2124880353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c5b11315abd94c6f8701f4d2e0cd4d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shader: {fileID: 4800000, guid: 0a2f050370b774b0f997eeb4bd824ebd, type: 3}
