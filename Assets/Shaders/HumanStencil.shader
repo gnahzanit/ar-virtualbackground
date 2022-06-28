@@ -3,10 +3,6 @@ Shader "Unlit/HumanStencil"
     Properties
     {
         _MainTex ("Main Texture", 2D) = "white" {}
-
-         _Color ("Color", Color) = (1,1,1,1)
-         _TransparentColor ("Transparent Color", Color) = (1,1,1,1)
-         _Threshold ("Threshhold", Float) = 0.1
     }
     SubShader
     {
@@ -95,7 +91,7 @@ Shader "Unlit/HumanStencil"
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 
-                float stencilValue = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord).r;
+                float stencilValue = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
 
                 fragment_output o;
                 o.color = real4(stencilValue, stencilValue, stencilValue, 0.5h);
