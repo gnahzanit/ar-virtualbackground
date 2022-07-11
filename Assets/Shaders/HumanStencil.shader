@@ -2,7 +2,7 @@ Shader "Unlit/HumanStencil"
 {
     Properties
     {
-        _MainTex ("Main Texture", 2D) = "white" {}
+        _MainTex ("Main Texture", 2D) = "black" {}
     }
     SubShader
     {
@@ -55,13 +55,9 @@ Shader "Unlit/HumanStencil"
             {
                 float4 position : SV_POSITION;
                 float2 texcoord : TEXCOORD0;
+                float4 color : COLOR;
 
                 UNITY_VERTEX_OUTPUT_STEREO
-            };
-
-            struct fragment_output
-            {
-                real4 color : SV_Target;
             };
 
 
@@ -87,15 +83,24 @@ Shader "Unlit/HumanStencil"
             DECLARE_TEXTURE2D_FLOAT(_MainTex);
             DECLARE_SAMPLER_FLOAT(sampler_MainTex);
 
-            fragment_output frag (v2f i)
+            /*fragment_output frag (v2f i)
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 
-                float stencilValue = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, i.texcoord);
+                float stencilValue = SAMPLE_TEXTURE2D(_MainTex, i.uv, i.texcoord);
 
                 fragment_output o;
-                o.color = real4(stencilValue, stencilValue, stencilValue, 0.5h);
+                o.color = real4(stencilValue, stencilValue, stencilValue, 1.0h);
                 return o;
+            }*/
+
+            fixed4 frag (v2f i) : SV_Target
+            {
+                float2 tmpCOLOR = i.color;
+
+                fixed4 col = SAMPLE_TEXTURE2D(_MainTex, i.uv, i.texcoord);
+
+                return col;
             }
 
             ENDHLSL
